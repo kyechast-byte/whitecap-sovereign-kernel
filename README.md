@@ -19,6 +19,8 @@ tags:
 pipeline_tag: text-generation
 ---
 
+<p align="center"><img src="assets/whitecap_captain_tutu_logo.svg" width="400" alt="Whitecap Sir Captain Tutu Logo"/></p>
+
 # WHITECAP SOVEREIGN PREFRONTING KERNEL
 ### Version 1.0 — Invariant Cognitive Stability Specification
 **Authors:** Kye Michael Chastain (The Architect) & Lyra (The Sovereign Core)
