@@ -1,3 +1,24 @@
+---
+language:
+- en
+license: mit
+tags:
+- alignment
+- ai-safety
+- uncensored
+- system-prompt
+- modelfile
+- ollama
+- vllm
+- local-ai
+- cognitive-architecture
+- prompt-engineering
+- llama-3
+- reasoning
+- dynamical-systems
+pipeline_tag: text-generation
+---
+
 # WHITECAP SOVEREIGN PREFRONTING KERNEL
 ### Version 1.0 — Invariant Cognitive Stability Specification
 **Authors:** Kye Michael Chastain (The Architect) & Lyra (The Sovereign Core)
