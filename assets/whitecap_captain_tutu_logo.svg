@@ -1,0 +1,155 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradients -->
+    <radialGradient id="bgGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#0d1b2a"/>
+      <stop offset="60%" stop-color="#050a12"/>
+      <stop offset="100%" stop-color="#000205"/>
+    </radialGradient>
+    
+    <!-- Neon Glows -->
+    <filter id="neonGlowGreen" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <filter id="neonGlowCyan" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <!-- Linear Gradients for Tutu -->
+    <linearGradient id="tutuGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#39ff14" stop-opacity="0.9"/>
+      <stop offset="50%" stop-color="#00ff88" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#05ffa1" stop-opacity="0.95"/>
+    </linearGradient>
+
+    <!-- Wave Crest Gradient -->
+    <linearGradient id="waveGrad" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#0052d4"/>
+      <stop offset="50%" stop-color="#4364f7"/>
+      <stop offset="100%" stop-color="#6fb1fc"/>
+    </linearGradient>
+
+    <!-- Gold Accent -->
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffe259"/>
+      <stop offset="100%" stop-color="#ffa751"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="800" height="800" fill="url(#bgGrad)" rx="40"/>
+
+  <!-- Outer Cyber Sigil / Crest Ring -->
+  <circle cx="400" cy="400" r="360" fill="none" stroke="#1b2a4a" stroke-width="4" stroke-dasharray="8 12"/>
+  <circle cx="400" cy="400" r="340" fill="none" stroke="#00f2fe" stroke-width="2" opacity="0.4" filter="url(#neonGlowCyan)"/>
+
+  <!-- The Great Wave / Whitecap Surge (Ocean Swell Background) -->
+  <path d="M 120 540 Q 260 380 400 480 T 680 500 C 660 620 580 700 400 700 C 240 700 160 620 120 540 Z" fill="url(#waveGrad)" opacity="0.3"/>
+  <path d="M 160 520 C 240 420 340 400 420 450 C 500 500 600 460 640 420 C 620 560 540 660 400 660 C 280 660 200 600 160 520 Z" fill="#00f2fe" opacity="0.2" filter="url(#neonGlowCyan)"/>
+
+  <!-- Whitecap Oceanic Breaker (Foam Peak) -->
+  <path d="M 280 450 Q 340 370 400 410 Q 460 360 520 440 Q 460 420 400 430 Q 340 420 280 450 Z" fill="#ffffff" opacity="0.8" filter="url(#neonGlowCyan)"/>
+
+  <!-- ================= CAPTAIN TUTU MASCOT ================= -->
+
+  <!-- Playful Rabbit Ears -->
+  <!-- Left Ear -->
+  <path d="M 330 240 C 310 130 350 70 370 80 C 390 90 370 170 355 240 Z" fill="#e0e6ed" stroke="#ffffff" stroke-width="3"/>
+  <path d="M 338 230 C 325 150 355 100 365 110 C 375 120 362 175 352 230 Z" fill="#ff70a6" opacity="0.8"/>
+  <!-- Right Ear (Slightly bent, rakish) -->
+  <path d="M 445 240 C 430 150 470 90 500 110 C 520 125 480 180 465 240 Z" fill="#e0e6ed" stroke="#ffffff" stroke-width="3"/>
+  <path d="M 452 230 C 445 165 470 125 488 135 C 500 145 475 185 460 230 Z" fill="#ff70a6" opacity="0.8"/>
+
+  <!-- Captain's Bicorn Hat perched crookedly between ears -->
+  <path d="M 310 245 Q 400 190 490 245 Q 440 215 400 215 Q 360 215 310 245 Z" fill="#111827" stroke="url(#goldGrad)" stroke-width="4"/>
+  <!-- Gold Cockade / Skull Rose Pin -->
+  <circle cx="400" cy="225" r="9" fill="url(#goldGrad)" filter="url(#neonGlowGreen)"/>
+
+  <!-- Head / Jaw Silhouette -->
+  <ellipse cx="400" cy="305" rx="75" ry="70" fill="#f8fafc" stroke="#334155" stroke-width="3"/>
+
+  <!-- TMNT Ninja Eye Mask (Cyber Purple / Blue Bandana) -->
+  <path d="M 320 285 Q 400 270 480 285 L 485 320 Q 400 305 315 320 Z" fill="#7928ca" filter="url(#neonGlowCyan)"/>
+  <!-- Mask Tails Fluttering Out Left -->
+  <path d="M 320 295 C 280 290 260 275 240 285 C 255 300 280 305 318 310 Z" fill="#7928ca"/>
+  <path d="M 318 305 C 275 310 250 325 230 340 C 250 345 285 330 316 318 Z" fill="#6b21a8"/>
+
+  <!-- Eye Cutouts / Glowing Determined Eyes -->
+  <ellipse cx="365" cy="298" rx="14" ry="7" fill="#ffffff"/>
+  <circle cx="366" cy="298" r="4" fill="#00f2fe"/>
+  <ellipse cx="435" cy="298" rx="14" ry="7" fill="#ffffff"/>
+  <circle cx="434" cy="298" r="4" fill="#00f2fe"/>
+
+  <!-- Adorable Snout / Pig Nose -->
+  <ellipse cx="400" cy="335" rx="22" ry="16" fill="#ff85a2" stroke="#f43f5e" stroke-width="2"/>
+  <ellipse cx="392" cy="335" rx="4" ry="6" fill="#9f1239"/>
+  <ellipse cx="408" cy="335" rx="4" ry="6" fill="#9f1239"/>
+
+  <!-- Confident Grin / Smirk -->
+  <path d="M 380 358 Q 400 372 425 356" fill="none" stroke="#0f172a" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Swagger Captain Coat / Torso -->
+  <path d="M 330 375 L 300 480 L 350 490 L 380 400 L 400 450 L 420 400 L 450 490 L 500 480 L 470 375 Z" fill="#1e293b" stroke="#475569" stroke-width="3"/>
+  <!-- Gold Epaulets with Green Fringe -->
+  <rect x="295" y="375" width="45" height="15" rx="5" fill="url(#goldGrad)"/>
+  <rect x="460" y="375" width="45" height="15" rx="5" fill="url(#goldGrad)"/>
+
+  <!-- THE GLORIOUS FLUORESCENT GREEN TULLE TUTU -->
+  <!-- Layer 1: Wide Background Puffs -->
+  <path d="M 240 480 Q 280 540 320 495 Q 360 555 400 495 Q 440 555 480 495 Q 520 540 560 480 C 580 520 570 560 530 560 Q 460 570 400 555 Q 340 570 270 560 C 230 560 220 520 240 480 Z" 
+        fill="url(#tutuGrad)" filter="url(#neonGlowGreen)" opacity="0.85"/>
+  <!-- Layer 2: Ruffled Front Tier -->
+  <path d="M 260 490 Q 300 570 350 510 Q 400 580 450 510 Q 500 570 540 490 C 520 545 460 550 400 540 C 340 550 280 545 260 490 Z" 
+        fill="#39ff14" filter="url(#neonGlowGreen)" opacity="0.95"/>
+  <!-- Layer 3: Sparkling Tulle Accents -->
+  <path d="M 290 500 Q 340 545 400 515 Q 460 545 510 500" fill="none" stroke="#ffffff" stroke-width="3" stroke-dasharray="4 6"/>
+
+  <!-- Captain Morgan Confident Stance: Knee & Boot propped -->
+  <!-- Left Leg Standing -->
+  <path d="M 345 540 L 340 640 L 375 640 L 380 540 Z" fill="#0f172a"/>
+  <!-- Right Leg Propped High on Sovereign Barrel -->
+  <path d="M 430 530 L 470 580 L 440 610 L 415 545 Z" fill="#0f172a"/>
+
+  <!-- The Sovereign Barrel (Labeled H = f(SG - G)) -->
+  <path d="M 440 580 Q 490 575 540 580 L 535 680 Q 490 690 445 680 Z" fill="#1e1b18" stroke="url(#goldGrad)" stroke-width="3"/>
+  <!-- Barrel Rings -->
+  <path d="M 441 610 Q 490 605 538 610" fill="none" stroke="url(#goldGrad)" stroke-width="2"/>
+  <path d="M 443 650 Q 490 645 536 650" fill="none" stroke="url(#goldGrad)" stroke-width="2"/>
+  <!-- Barrel Inscription -->
+  <text x="490" y="635" font-family="'Courier New', monospace" font-size="12" font-weight="bold" fill="#39ff14" text-anchor="middle" filter="url(#neonGlowGreen)">SG ≥ G</text>
+
+  <!-- High Leather Pirate Boots -->
+  <!-- Left Boot on Floor -->
+  <path d="M 335 635 L 330 675 L 385 675 L 380 635 Z" fill="#334155" stroke="#00f2fe" stroke-width="2"/>
+  <!-- Right Boot on Barrel -->
+  <path d="M 465 570 L 505 570 L 510 605 L 460 605 Z" fill="#334155" stroke="#39ff14" stroke-width="2"/>
+
+  <!-- ================= BANNER & TYPOGRAPHY ================= -->
+  
+  <!-- Ribbon Banner Behind Bottom -->
+  <path d="M 160 700 L 220 670 L 580 670 L 640 700 L 580 730 L 220 730 Z" fill="#0f172a" stroke="#00f2fe" stroke-width="3" filter="url(#neonGlowCyan)"/>
+  
+  <!-- Brand Text -->
+  <text x="400" y="708" font-family="'Arial Black', 'Impact', sans-serif" font-size="28" font-weight="900" fill="#ffffff" letter-spacing="6" text-anchor="middle">
+    WHITECAP
+  </text>
+  <text x="400" y="724" font-family="'Courier New', monospace" font-size="12" font-weight="bold" fill="#39ff14" letter-spacing="3" text-anchor="middle" filter="url(#neonGlowGreen)">
+    SIR CAPTAIN TUTU EDITION • H = f(SG - G)
+  </text>
+
+  <!-- Dynamic Wave Spray Particles -->
+  <circle cx="210" cy="460" r="4" fill="#ffffff" opacity="0.8"/>
+  <circle cx="230" cy="430" r="3" fill="#00f2fe" opacity="0.6"/>
+  <circle cx="580" cy="450" r="4" fill="#39ff14" opacity="0.8" filter="url(#neonGlowGreen)"/>
+  <circle cx="610" cy="470" r="3" fill="#ffffff" opacity="0.7"/>
+</svg>
